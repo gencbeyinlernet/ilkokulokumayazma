@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6750a4">
+  <meta name="description" content="İlkokul öğrencileri için Türkçe okuma, dinleme, yazma ve rakam oyunları.">
+  <title>Minik Kelimeler · Öğrenmenin oyun hâli</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./" aria-label="Minik Kelimeler ana sayfa"><span class="brand-icon">m<span>k</span></span><span>minik<span class="brand-light">kelimeler</span><small>HER GÜN YENİ BİR KEŞİF</small></span></a><nav aria-label="Ana menü"><button class="nav-active" id="home-nav">Keşfet</button><button id="progress-nav">İlerlemem</button><button id="guide-nav">Yetişkin rehberi <span aria-hidden="true">↗</span></button></nav><button id="sound-toggle" class="sound-button" aria-pressed="true" aria-label="Sesli geri bildirimi kapat">♫ <span>Ses açık</span></button></header>
+  <main id="app"></main>
+  <footer><span class="footer-brand">✦ Küçük adımlar, kocaman keşifler.</span><span>Çocuklar için özenle hazırlandı <span class="heart">♥</span></span></footer>
+  <dialog id="guide"><div class="dialog-heading"><span class="eyebrow">BİRLİKTE ÖĞRENELİM</span><button id="close-guide" class="icon-button" aria-label="Rehberi kapat">✕</button></div><h2>Biraz destek, bolca cesaret.</h2><p>Minik Kelimeler; rakamları tanıma, harfleri birleştirme, dinlediğini anlama ve yazma alıştırmaları sunar. Resmî bir müfredatın veya öğretmen değerlendirmesinin yerine geçmez.</p><ul><li>Önce rakamlarla veya çocuğun bildiği harflerle başlayın. Bütün bölümler açıktır.</li><li>5 soruluk kısa turları birlikte tamamlayın. Hata yapıldığında yeniden denemek serbesttir.</li><li>Dinleme için cihazda Türkçe metin okuma sesi bulunmalıdır. Ses yoksa başka bir cihazda deneyin.</li><li>Seslendirme harflerin adını okuyabilir; harf seslerini öğretirken öğretmen modelini kullanın.</li><li>Yazma alanı serbest çizim içindir. El yazısı otomatik değerlendirilmez; aşağıdaki klavye yanıtı kontrol edilir.</li><li>İlerleme yalnızca bu tarayıcıda tutulur. Hesap, reklam veya analiz servisi yoktur.</li></ul><button id="reset-progress" class="danger-button">Bu cihazdaki ilerlemeyi sıfırla</button><p id="reset-message" role="status"></p></dialog>
+  <div id="announcer" class="sr-only" aria-live="polite"></div>
+</body>
+</html>
